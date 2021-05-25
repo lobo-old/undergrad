@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1448387926 source:c:\users\andreloboteixeira\google drive\elétrica\8 - intercâmbio\systèmes réel et embarqués\td2liste\main.c
+	<stdio.h>
+	<stdlib.h>
+	"sliste.h"
+
+1448387820 c:\users\andreloboteixeira\google drive\elétrica\8 - intercâmbio\systèmes réel et embarqués\td2liste\sliste.h
+	<stdio.h>
+	<stdlib.h>
+
+1448387756 source:c:\users\andreloboteixeira\google drive\elétrica\8 - intercâmbio\systèmes réel et embarqués\td2liste\sliste.c
+	<stdio.h>
+	<stdlib.h>
+	"sliste.h"
+

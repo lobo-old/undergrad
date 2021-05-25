@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1501871165 source:c:\users\andreloboteixeira\desktop\projetos\prog - aprendizados\c\testargsmain\main.c
+	<stdio.h>
+	<stdlib.h>
+
