@@ -1,0 +1,116 @@
+$comment
+	File created using the following command:
+		vcd file adicionaire1.msim.vcd -direction
+$end
+$date
+	Fri Nov 27 16:58:35 2015
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module BLOCK2_vlg_vec_tst $end
+$var reg 3 ! sw [2:0] $end
+$var wire 1 " LEDG [1] $end
+$var wire 1 # LEDG [0] $end
+$var wire 1 $ sampler $end
+$scope module i1 $end
+$var wire 1 % gnd $end
+$var wire 1 & vcc $end
+$var wire 1 ' unknown $end
+$var tri1 1 ( devclrn $end
+$var tri1 1 ) devpor $end
+$var tri1 1 * devoe $end
+$var wire 1 + inst|inst20~0_combout $end
+$var wire 1 , inst|inst4~0_combout $end
+$var wire 1 - sw~combout [2] $end
+$var wire 1 . sw~combout [1] $end
+$var wire 1 / sw~combout [0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 !
+0#
+0"
+x$
+0%
+1&
+x'
+1(
+1)
+1*
+0+
+0,
+0/
+0.
+0-
+$end
+#10000
+b100 !
+1-
+0$
+1+
+1"
+#20000
+b110 !
+b10 !
+1.
+0-
+1$
+#30000
+b110 !
+1-
+0$
+1,
+0+
+1#
+0"
+#40000
+b111 !
+b101 !
+b1 !
+1/
+0.
+0-
+1$
+0,
+1+
+0#
+1"
+#50000
+b101 !
+1-
+0$
+1,
+0+
+1#
+0"
+#60000
+b111 !
+b11 !
+1.
+0-
+1$
+#70000
+b111 !
+1-
+0$
+1+
+1"
+#80000
+b110 !
+b100 !
+b0 !
+0/
+0.
+0-
+1$
+0,
+0+
+0#
+0"
+#1000000

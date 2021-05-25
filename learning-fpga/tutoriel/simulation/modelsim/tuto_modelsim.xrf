@@ -1,0 +1,10 @@
+vendor_name = ModelSim
+source_file = 1, U:/ElecNum/TP1/tutoriel/tuto.bdf
+source_file = 1, light.bdf
+source_file = 1, U:/ElecNum/TP1/tutoriel/tutoSIMU.vwf
+source_file = 1, U:/ElecNum/TP1/tutoriel/db/tuto.cbx.xml
+design_name = tuto
+instance = comp, \x1~I , x1, tuto, 1
+instance = comp, \x2~I , x2, tuto, 1
+instance = comp, \inst2~0 , inst2~0, tuto, 1
+instance = comp, \f~I , f, tuto, 1

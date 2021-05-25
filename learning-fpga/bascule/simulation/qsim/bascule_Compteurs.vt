@@ -1,0 +1,749 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "12/17/2015 22:50:28"
+                                                                        
+// Verilog Self-Checking Test Bench (with test vectors) for design :    CompteurN
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module CompteurN_vlg_sample_tst(
+	CLK_in,
+	RESET,
+	START,
+	sampler_tx
+);
+input  CLK_in;
+input  RESET;
+input  START;
+output sampler_tx;
+
+reg sample;
+time current_time;
+always @(CLK_in or RESET or START)
+                                                                                
+begin                                                 
+ if ($realtime > 0)                                   
+ begin                                                
+	if ($realtime == 0 || $realtime != current_time)  
+	begin									          
+		if (sample === 1'bx)                          
+			sample = 0;                               
+		else                                          
+			sample = ~sample;                         
+	end										          
+	current_time = $realtime;					      
+ end                                                  
+end                                                   
+
+assign sampler_tx = sample;
+endmodule
+
+module CompteurN_vlg_check_tst (
+	CLK_Out,
+	V_COUNT,
+	sampler_rx
+);
+input  CLK_Out;
+input [28:0] V_COUNT;
+input sampler_rx;
+
+reg  CLK_Out_expected;
+reg [28:0] V_COUNT_expected;
+
+reg  CLK_Out_prev;
+reg [28:0] V_COUNT_prev;
+
+reg  CLK_Out_expected_prev;
+reg [28:0] V_COUNT_expected_prev;
+
+reg  last_CLK_Out_exp;
+reg [28:0] last_V_COUNT_exp;
+
+reg trigger;
+
+integer i;
+integer nummismatches;
+
+reg [1:2] on_first_change ;
+
+
+initial
+begin
+trigger = 0;
+i = 0;
+nummismatches = 0;
+on_first_change = 2'b1;
+end
+
+// update real /o prevs
+
+always @(trigger)
+begin
+	CLK_Out_prev = CLK_Out;
+	V_COUNT_prev = V_COUNT;
+end
+
+// update expected /o prevs
+
+always @(trigger)
+begin
+	CLK_Out_expected_prev = CLK_Out_expected;
+	V_COUNT_expected_prev = V_COUNT_expected;
+end
+
+
+// expected V_COUNT[ 28 ]
+initial
+begin
+	V_COUNT_expected[28] = 1'bX;
+end 
+// expected V_COUNT[ 27 ]
+initial
+begin
+	V_COUNT_expected[27] = 1'bX;
+end 
+// expected V_COUNT[ 26 ]
+initial
+begin
+	V_COUNT_expected[26] = 1'bX;
+end 
+// expected V_COUNT[ 25 ]
+initial
+begin
+	V_COUNT_expected[25] = 1'bX;
+end 
+// expected V_COUNT[ 24 ]
+initial
+begin
+	V_COUNT_expected[24] = 1'bX;
+end 
+// expected V_COUNT[ 23 ]
+initial
+begin
+	V_COUNT_expected[23] = 1'bX;
+end 
+// expected V_COUNT[ 22 ]
+initial
+begin
+	V_COUNT_expected[22] = 1'bX;
+end 
+// expected V_COUNT[ 21 ]
+initial
+begin
+	V_COUNT_expected[21] = 1'bX;
+end 
+// expected V_COUNT[ 20 ]
+initial
+begin
+	V_COUNT_expected[20] = 1'bX;
+end 
+// expected V_COUNT[ 19 ]
+initial
+begin
+	V_COUNT_expected[19] = 1'bX;
+end 
+// expected V_COUNT[ 18 ]
+initial
+begin
+	V_COUNT_expected[18] = 1'bX;
+end 
+// expected V_COUNT[ 17 ]
+initial
+begin
+	V_COUNT_expected[17] = 1'bX;
+end 
+// expected V_COUNT[ 16 ]
+initial
+begin
+	V_COUNT_expected[16] = 1'bX;
+end 
+// expected V_COUNT[ 15 ]
+initial
+begin
+	V_COUNT_expected[15] = 1'bX;
+end 
+// expected V_COUNT[ 14 ]
+initial
+begin
+	V_COUNT_expected[14] = 1'bX;
+end 
+// expected V_COUNT[ 13 ]
+initial
+begin
+	V_COUNT_expected[13] = 1'bX;
+end 
+// expected V_COUNT[ 12 ]
+initial
+begin
+	V_COUNT_expected[12] = 1'bX;
+end 
+// expected V_COUNT[ 11 ]
+initial
+begin
+	V_COUNT_expected[11] = 1'bX;
+end 
+// expected V_COUNT[ 10 ]
+initial
+begin
+	V_COUNT_expected[10] = 1'bX;
+end 
+// expected V_COUNT[ 9 ]
+initial
+begin
+	V_COUNT_expected[9] = 1'bX;
+end 
+// expected V_COUNT[ 8 ]
+initial
+begin
+	V_COUNT_expected[8] = 1'bX;
+end 
+// expected V_COUNT[ 7 ]
+initial
+begin
+	V_COUNT_expected[7] = 1'bX;
+end 
+// expected V_COUNT[ 6 ]
+initial
+begin
+	V_COUNT_expected[6] = 1'bX;
+end 
+// expected V_COUNT[ 5 ]
+initial
+begin
+	V_COUNT_expected[5] = 1'bX;
+end 
+// expected V_COUNT[ 4 ]
+initial
+begin
+	V_COUNT_expected[4] = 1'bX;
+end 
+// expected V_COUNT[ 3 ]
+initial
+begin
+	V_COUNT_expected[3] = 1'bX;
+end 
+// expected V_COUNT[ 2 ]
+initial
+begin
+	V_COUNT_expected[2] = 1'bX;
+end 
+// expected V_COUNT[ 1 ]
+initial
+begin
+	V_COUNT_expected[1] = 1'bX;
+end 
+// expected V_COUNT[ 0 ]
+initial
+begin
+	V_COUNT_expected[0] = 1'bX;
+end 
+
+// expected CLK_Out
+initial
+begin
+	CLK_Out_expected = 1'bX;
+end 
+// generate trigger
+always @(CLK_Out_expected or CLK_Out or V_COUNT_expected or V_COUNT)
+begin
+	trigger <= ~trigger;
+end
+
+always @(posedge sampler_rx or negedge sampler_rx)
+begin
+`ifdef debug_tbench
+	$display("Scanning pattern %d @time = %t",i,$realtime );
+	i = i + 1;
+	$display("| expected CLK_Out = %b | expected V_COUNT = %b | ",CLK_Out_expected_prev,V_COUNT_expected_prev);
+	$display("| real CLK_Out = %b | real V_COUNT = %b | ",CLK_Out_prev,V_COUNT_prev);
+`endif
+	if (
+		( CLK_Out_expected_prev !== 1'bx ) && ( CLK_Out_prev !== CLK_Out_expected_prev )
+		&& ((CLK_Out_expected_prev !== last_CLK_Out_exp) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port CLK_Out :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", CLK_Out_expected_prev);
+		$display ("     Real value = %b", CLK_Out_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_CLK_Out_exp = CLK_Out_expected_prev;
+	end
+	if (
+		( V_COUNT_expected_prev[0] !== 1'bx ) && ( V_COUNT_prev[0] !== V_COUNT_expected_prev[0] )
+		&& ((V_COUNT_expected_prev[0] !== last_V_COUNT_exp[0]) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port V_COUNT[0] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", V_COUNT_expected_prev);
+		$display ("     Real value = %b", V_COUNT_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_V_COUNT_exp[0] = V_COUNT_expected_prev[0];
+	end
+	if (
+		( V_COUNT_expected_prev[1] !== 1'bx ) && ( V_COUNT_prev[1] !== V_COUNT_expected_prev[1] )
+		&& ((V_COUNT_expected_prev[1] !== last_V_COUNT_exp[1]) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port V_COUNT[1] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", V_COUNT_expected_prev);
+		$display ("     Real value = %b", V_COUNT_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_V_COUNT_exp[1] = V_COUNT_expected_prev[1];
+	end
+	if (
+		( V_COUNT_expected_prev[2] !== 1'bx ) && ( V_COUNT_prev[2] !== V_COUNT_expected_prev[2] )
+		&& ((V_COUNT_expected_prev[2] !== last_V_COUNT_exp[2]) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port V_COUNT[2] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", V_COUNT_expected_prev);
+		$display ("     Real value = %b", V_COUNT_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_V_COUNT_exp[2] = V_COUNT_expected_prev[2];
+	end
+	if (
+		( V_COUNT_expected_prev[3] !== 1'bx ) && ( V_COUNT_prev[3] !== V_COUNT_expected_prev[3] )
+		&& ((V_COUNT_expected_prev[3] !== last_V_COUNT_exp[3]) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port V_COUNT[3] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", V_COUNT_expected_prev);
+		$display ("     Real value = %b", V_COUNT_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_V_COUNT_exp[3] = V_COUNT_expected_prev[3];
+	end
+	if (
+		( V_COUNT_expected_prev[4] !== 1'bx ) && ( V_COUNT_prev[4] !== V_COUNT_expected_prev[4] )
+		&& ((V_COUNT_expected_prev[4] !== last_V_COUNT_exp[4]) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port V_COUNT[4] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", V_COUNT_expected_prev);
+		$display ("     Real value = %b", V_COUNT_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_V_COUNT_exp[4] = V_COUNT_expected_prev[4];
+	end
+	if (
+		( V_COUNT_expected_prev[5] !== 1'bx ) && ( V_COUNT_prev[5] !== V_COUNT_expected_prev[5] )
+		&& ((V_COUNT_expected_prev[5] !== last_V_COUNT_exp[5]) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port V_COUNT[5] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", V_COUNT_expected_prev);
+		$display ("     Real value = %b", V_COUNT_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_V_COUNT_exp[5] = V_COUNT_expected_prev[5];
+	end
+	if (
+		( V_COUNT_expected_prev[6] !== 1'bx ) && ( V_COUNT_prev[6] !== V_COUNT_expected_prev[6] )
+		&& ((V_COUNT_expected_prev[6] !== last_V_COUNT_exp[6]) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port V_COUNT[6] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", V_COUNT_expected_prev);
+		$display ("     Real value = %b", V_COUNT_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_V_COUNT_exp[6] = V_COUNT_expected_prev[6];
+	end
+	if (
+		( V_COUNT_expected_prev[7] !== 1'bx ) && ( V_COUNT_prev[7] !== V_COUNT_expected_prev[7] )
+		&& ((V_COUNT_expected_prev[7] !== last_V_COUNT_exp[7]) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port V_COUNT[7] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", V_COUNT_expected_prev);
+		$display ("     Real value = %b", V_COUNT_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_V_COUNT_exp[7] = V_COUNT_expected_prev[7];
+	end
+	if (
+		( V_COUNT_expected_prev[8] !== 1'bx ) && ( V_COUNT_prev[8] !== V_COUNT_expected_prev[8] )
+		&& ((V_COUNT_expected_prev[8] !== last_V_COUNT_exp[8]) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port V_COUNT[8] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", V_COUNT_expected_prev);
+		$display ("     Real value = %b", V_COUNT_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_V_COUNT_exp[8] = V_COUNT_expected_prev[8];
+	end
+	if (
+		( V_COUNT_expected_prev[9] !== 1'bx ) && ( V_COUNT_prev[9] !== V_COUNT_expected_prev[9] )
+		&& ((V_COUNT_expected_prev[9] !== last_V_COUNT_exp[9]) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port V_COUNT[9] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", V_COUNT_expected_prev);
+		$display ("     Real value = %b", V_COUNT_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_V_COUNT_exp[9] = V_COUNT_expected_prev[9];
+	end
+	if (
+		( V_COUNT_expected_prev[10] !== 1'bx ) && ( V_COUNT_prev[10] !== V_COUNT_expected_prev[10] )
+		&& ((V_COUNT_expected_prev[10] !== last_V_COUNT_exp[10]) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port V_COUNT[10] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", V_COUNT_expected_prev);
+		$display ("     Real value = %b", V_COUNT_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_V_COUNT_exp[10] = V_COUNT_expected_prev[10];
+	end
+	if (
+		( V_COUNT_expected_prev[11] !== 1'bx ) && ( V_COUNT_prev[11] !== V_COUNT_expected_prev[11] )
+		&& ((V_COUNT_expected_prev[11] !== last_V_COUNT_exp[11]) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port V_COUNT[11] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", V_COUNT_expected_prev);
+		$display ("     Real value = %b", V_COUNT_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_V_COUNT_exp[11] = V_COUNT_expected_prev[11];
+	end
+	if (
+		( V_COUNT_expected_prev[12] !== 1'bx ) && ( V_COUNT_prev[12] !== V_COUNT_expected_prev[12] )
+		&& ((V_COUNT_expected_prev[12] !== last_V_COUNT_exp[12]) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port V_COUNT[12] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", V_COUNT_expected_prev);
+		$display ("     Real value = %b", V_COUNT_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_V_COUNT_exp[12] = V_COUNT_expected_prev[12];
+	end
+	if (
+		( V_COUNT_expected_prev[13] !== 1'bx ) && ( V_COUNT_prev[13] !== V_COUNT_expected_prev[13] )
+		&& ((V_COUNT_expected_prev[13] !== last_V_COUNT_exp[13]) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port V_COUNT[13] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", V_COUNT_expected_prev);
+		$display ("     Real value = %b", V_COUNT_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_V_COUNT_exp[13] = V_COUNT_expected_prev[13];
+	end
+	if (
+		( V_COUNT_expected_prev[14] !== 1'bx ) && ( V_COUNT_prev[14] !== V_COUNT_expected_prev[14] )
+		&& ((V_COUNT_expected_prev[14] !== last_V_COUNT_exp[14]) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port V_COUNT[14] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", V_COUNT_expected_prev);
+		$display ("     Real value = %b", V_COUNT_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_V_COUNT_exp[14] = V_COUNT_expected_prev[14];
+	end
+	if (
+		( V_COUNT_expected_prev[15] !== 1'bx ) && ( V_COUNT_prev[15] !== V_COUNT_expected_prev[15] )
+		&& ((V_COUNT_expected_prev[15] !== last_V_COUNT_exp[15]) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port V_COUNT[15] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", V_COUNT_expected_prev);
+		$display ("     Real value = %b", V_COUNT_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_V_COUNT_exp[15] = V_COUNT_expected_prev[15];
+	end
+	if (
+		( V_COUNT_expected_prev[16] !== 1'bx ) && ( V_COUNT_prev[16] !== V_COUNT_expected_prev[16] )
+		&& ((V_COUNT_expected_prev[16] !== last_V_COUNT_exp[16]) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port V_COUNT[16] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", V_COUNT_expected_prev);
+		$display ("     Real value = %b", V_COUNT_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_V_COUNT_exp[16] = V_COUNT_expected_prev[16];
+	end
+	if (
+		( V_COUNT_expected_prev[17] !== 1'bx ) && ( V_COUNT_prev[17] !== V_COUNT_expected_prev[17] )
+		&& ((V_COUNT_expected_prev[17] !== last_V_COUNT_exp[17]) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port V_COUNT[17] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", V_COUNT_expected_prev);
+		$display ("     Real value = %b", V_COUNT_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_V_COUNT_exp[17] = V_COUNT_expected_prev[17];
+	end
+	if (
+		( V_COUNT_expected_prev[18] !== 1'bx ) && ( V_COUNT_prev[18] !== V_COUNT_expected_prev[18] )
+		&& ((V_COUNT_expected_prev[18] !== last_V_COUNT_exp[18]) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port V_COUNT[18] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", V_COUNT_expected_prev);
+		$display ("     Real value = %b", V_COUNT_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_V_COUNT_exp[18] = V_COUNT_expected_prev[18];
+	end
+	if (
+		( V_COUNT_expected_prev[19] !== 1'bx ) && ( V_COUNT_prev[19] !== V_COUNT_expected_prev[19] )
+		&& ((V_COUNT_expected_prev[19] !== last_V_COUNT_exp[19]) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port V_COUNT[19] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", V_COUNT_expected_prev);
+		$display ("     Real value = %b", V_COUNT_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_V_COUNT_exp[19] = V_COUNT_expected_prev[19];
+	end
+	if (
+		( V_COUNT_expected_prev[20] !== 1'bx ) && ( V_COUNT_prev[20] !== V_COUNT_expected_prev[20] )
+		&& ((V_COUNT_expected_prev[20] !== last_V_COUNT_exp[20]) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port V_COUNT[20] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", V_COUNT_expected_prev);
+		$display ("     Real value = %b", V_COUNT_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_V_COUNT_exp[20] = V_COUNT_expected_prev[20];
+	end
+	if (
+		( V_COUNT_expected_prev[21] !== 1'bx ) && ( V_COUNT_prev[21] !== V_COUNT_expected_prev[21] )
+		&& ((V_COUNT_expected_prev[21] !== last_V_COUNT_exp[21]) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port V_COUNT[21] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", V_COUNT_expected_prev);
+		$display ("     Real value = %b", V_COUNT_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_V_COUNT_exp[21] = V_COUNT_expected_prev[21];
+	end
+	if (
+		( V_COUNT_expected_prev[22] !== 1'bx ) && ( V_COUNT_prev[22] !== V_COUNT_expected_prev[22] )
+		&& ((V_COUNT_expected_prev[22] !== last_V_COUNT_exp[22]) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port V_COUNT[22] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", V_COUNT_expected_prev);
+		$display ("     Real value = %b", V_COUNT_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_V_COUNT_exp[22] = V_COUNT_expected_prev[22];
+	end
+	if (
+		( V_COUNT_expected_prev[23] !== 1'bx ) && ( V_COUNT_prev[23] !== V_COUNT_expected_prev[23] )
+		&& ((V_COUNT_expected_prev[23] !== last_V_COUNT_exp[23]) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port V_COUNT[23] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", V_COUNT_expected_prev);
+		$display ("     Real value = %b", V_COUNT_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_V_COUNT_exp[23] = V_COUNT_expected_prev[23];
+	end
+	if (
+		( V_COUNT_expected_prev[24] !== 1'bx ) && ( V_COUNT_prev[24] !== V_COUNT_expected_prev[24] )
+		&& ((V_COUNT_expected_prev[24] !== last_V_COUNT_exp[24]) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port V_COUNT[24] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", V_COUNT_expected_prev);
+		$display ("     Real value = %b", V_COUNT_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_V_COUNT_exp[24] = V_COUNT_expected_prev[24];
+	end
+	if (
+		( V_COUNT_expected_prev[25] !== 1'bx ) && ( V_COUNT_prev[25] !== V_COUNT_expected_prev[25] )
+		&& ((V_COUNT_expected_prev[25] !== last_V_COUNT_exp[25]) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port V_COUNT[25] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", V_COUNT_expected_prev);
+		$display ("     Real value = %b", V_COUNT_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_V_COUNT_exp[25] = V_COUNT_expected_prev[25];
+	end
+	if (
+		( V_COUNT_expected_prev[26] !== 1'bx ) && ( V_COUNT_prev[26] !== V_COUNT_expected_prev[26] )
+		&& ((V_COUNT_expected_prev[26] !== last_V_COUNT_exp[26]) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port V_COUNT[26] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", V_COUNT_expected_prev);
+		$display ("     Real value = %b", V_COUNT_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_V_COUNT_exp[26] = V_COUNT_expected_prev[26];
+	end
+	if (
+		( V_COUNT_expected_prev[27] !== 1'bx ) && ( V_COUNT_prev[27] !== V_COUNT_expected_prev[27] )
+		&& ((V_COUNT_expected_prev[27] !== last_V_COUNT_exp[27]) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port V_COUNT[27] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", V_COUNT_expected_prev);
+		$display ("     Real value = %b", V_COUNT_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_V_COUNT_exp[27] = V_COUNT_expected_prev[27];
+	end
+	if (
+		( V_COUNT_expected_prev[28] !== 1'bx ) && ( V_COUNT_prev[28] !== V_COUNT_expected_prev[28] )
+		&& ((V_COUNT_expected_prev[28] !== last_V_COUNT_exp[28]) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port V_COUNT[28] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", V_COUNT_expected_prev);
+		$display ("     Real value = %b", V_COUNT_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_V_COUNT_exp[28] = V_COUNT_expected_prev[28];
+	end
+
+	trigger <= ~trigger;
+end
+initial 
+
+begin 
+$timeformat(-12,3," ps",6);
+#200000;
+if (nummismatches > 0)
+	$display ("%d mismatched vectors : Simulation failed !",nummismatches);
+else
+	$display ("Simulation passed !");
+$finish;
+end 
+endmodule
+
+module CompteurN_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg CLK_in;
+reg RESET;
+reg START;
+// wires                                               
+wire CLK_Out;
+wire [28:0] V_COUNT;
+
+wire sampler;                             
+
+// assign statements (if any)                          
+CompteurN i1 (
+// port map - connection between master ports and signals/registers   
+	.CLK_in(CLK_in),
+	.CLK_Out(CLK_Out),
+	.RESET(RESET),
+	.START(START),
+	.V_COUNT(V_COUNT)
+);
+
+// CLK_in
+initial
+begin
+	repeat(33)
+	begin
+		CLK_in = 1'b0;
+		CLK_in = #3000 1'b1;
+		# 3000;
+	end
+	CLK_in = 1'b0;
+end 
+
+// RESET
+initial
+begin
+	RESET = 1'b0;
+	RESET = #120000 1'b1;
+	RESET = #10000 1'b0;
+	RESET = #20000 1'b1;
+	RESET = #10000 1'b0;
+end 
+
+// START
+initial
+begin
+	START = 1'b1;
+end 
+
+CompteurN_vlg_sample_tst tb_sample (
+	.CLK_in(CLK_in),
+	.RESET(RESET),
+	.START(START),
+	.sampler_tx(sampler)
+);
+
+CompteurN_vlg_check_tst tb_out(
+	.CLK_Out(CLK_Out),
+	.V_COUNT(V_COUNT),
+	.sampler_rx(sampler)
+);
+endmodule
+

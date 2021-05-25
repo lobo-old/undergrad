@@ -1,0 +1,125 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow Model Setup 'SW[1]'
+Slack : -6.652
+TNS   : -19.885
+
+Type  : Slow Model Setup 'SW[0]'
+Slack : -5.852
+TNS   : -16.971
+
+Type  : Slow Model Setup 'SW[3]'
+Slack : -5.824
+TNS   : -5.824
+
+Type  : Slow Model Hold 'SW[1]'
+Slack : -3.953
+TNS   : -11.349
+
+Type  : Slow Model Hold 'SW[0]'
+Slack : -1.823
+TNS   : -4.959
+
+Type  : Slow Model Hold 'SW[3]'
+Slack : -1.278
+TNS   : -1.278
+
+Type  : Slow Model Recovery 'SW[1]'
+Slack : -6.793
+TNS   : -20.079
+
+Type  : Slow Model Recovery 'SW[3]'
+Slack : -6.020
+TNS   : -6.020
+
+Type  : Slow Model Recovery 'SW[0]'
+Slack : -5.808
+TNS   : -17.165
+
+Type  : Slow Model Removal 'SW[1]'
+Slack : -2.906
+TNS   : -8.203
+
+Type  : Slow Model Removal 'SW[0]'
+Slack : -0.776
+TNS   : -1.813
+
+Type  : Slow Model Removal 'SW[3]'
+Slack : -0.342
+TNS   : -0.342
+
+Type  : Slow Model Minimum Pulse Width 'SW[1]'
+Slack : -3.801
+TNS   : -58.256
+
+Type  : Slow Model Minimum Pulse Width 'SW[0]'
+Slack : -1.380
+TNS   : -4.380
+
+Type  : Slow Model Minimum Pulse Width 'SW[3]'
+Slack : -1.380
+TNS   : -2.380
+
+Type  : Fast Model Setup 'SW[1]'
+Slack : -2.599
+TNS   : -7.788
+
+Type  : Fast Model Setup 'SW[0]'
+Slack : -2.278
+TNS   : -6.537
+
+Type  : Fast Model Setup 'SW[3]'
+Slack : -2.120
+TNS   : -2.120
+
+Type  : Fast Model Hold 'SW[1]'
+Slack : -1.842
+TNS   : -5.273
+
+Type  : Fast Model Hold 'SW[0]'
+Slack : -0.934
+TNS   : -2.549
+
+Type  : Fast Model Hold 'SW[3]'
+Slack : -0.805
+TNS   : -0.805
+
+Type  : Fast Model Recovery 'SW[1]'
+Slack : -2.787
+TNS   : -8.247
+
+Type  : Fast Model Recovery 'SW[0]'
+Slack : -2.373
+TNS   : -6.996
+
+Type  : Fast Model Recovery 'SW[3]'
+Slack : -2.338
+TNS   : -2.338
+
+Type  : Fast Model Removal 'SW[1]'
+Slack : -1.248
+TNS   : -3.540
+
+Type  : Fast Model Removal 'SW[0]'
+Slack : -0.340
+TNS   : -0.816
+
+Type  : Fast Model Removal 'SW[3]'
+Slack : -0.274
+TNS   : -0.274
+
+Type  : Fast Model Minimum Pulse Width 'SW[1]'
+Slack : -1.915
+TNS   : -24.738
+
+Type  : Fast Model Minimum Pulse Width 'SW[0]'
+Slack : -1.380
+TNS   : -4.380
+
+Type  : Fast Model Minimum Pulse Width 'SW[3]'
+Slack : -1.380
+TNS   : -2.380
+
+------------------------------------------------------------

@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\andreloboteixeira\Google Drive\Elétrica\8 - intercâmbio\Conception de Systèmes Numériques\TPs\TP3\chronomètre\simulation\qsim
+vCompteur16
+Z1 I]dXcO]TWe^g1:6nGQb>Bi3
+Z2 Vg0^LoXlYj1Fm06V34Q9bI1
+Z3 dC:\Users\andreloboteixeira\Google Drive\Elétrica\8 - intercâmbio\Conception de Systèmes Numériques\TPs\TP3\chronomètre\simulation\qsim
+Z4 w1450388750
+Z5 8chronometre.vo
+Z6 Fchronometre.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+Z9 n@compteur16
+!i10b 1
+Z10 !s100 `H6NN3WKaXm;Cf9FL]MIm0
+!s85 0
+Z11 !s108 1450388752.469000
+Z12 !s107 chronometre.vo|
+Z13 !s90 -work|work|chronometre.vo|
+!s101 -O0
+vCompteur16_vlg_check_tst
+!i10b 1
+!s100 FCl`]jRgFzhLEZ:oWLl1T0
+I7^m[C0<:2D:Fj_SP]KPIN3
+VZMTz[:C8BCOBBY62Z]bVi3
+R3
+Z14 w1450388748
+Z15 8chronometre.vt
+Z16 Fchronometre.vt
+L0 59
+R7
+r1
+!s85 0
+31
+Z17 !s108 1450388752.954000
+Z18 !s107 chronometre.vt|
+Z19 !s90 -work|work|chronometre.vt|
+!s101 -O0
+R8
+n@compteur16_vlg_check_tst
+vCompteur16_vlg_sample_tst
+!i10b 1
+!s100 8GToS5X;eBY]GI4HOH^Z@2
+IMnMXi1ba139hBgLF]ABaT3
+VI2D;Pz8Fb2KAd_e9o28[23
+R3
+R14
+R15
+R16
+L0 29
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R8
+n@compteur16_vlg_sample_tst
+vCompteur16_vlg_vec_tst
+!i10b 1
+!s100 dBj4YH_0iFcofZYcLbmKl2
+IzOlb]JM>n[ec:>3mR>lPX3
+VK>AKJ3H^>LncTkU3VY:J32
+R3
+R14
+R15
+R16
+L0 234
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R8
+n@compteur16_vlg_vec_tst

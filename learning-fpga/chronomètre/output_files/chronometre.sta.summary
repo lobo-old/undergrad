@@ -1,0 +1,173 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow Model Setup 'CLOCK_50'
+Slack : -2.587
+TNS   : -50.033
+
+Type  : Slow Model Setup 'CompteurM_Nbits:inst5|Sgn_out'
+Slack : -0.745
+TNS   : -1.366
+
+Type  : Slow Model Setup 'CompteurM_Nbits:inst2|Sgn_out'
+Slack : -0.463
+TNS   : -0.837
+
+Type  : Slow Model Setup 'CompteurM_Nbits:inst7|Sgn_out'
+Slack : -0.416
+TNS   : -0.739
+
+Type  : Slow Model Setup 'CompteurM_Nbits:inst4|Sgn_out'
+Slack : -0.296
+TNS   : -0.910
+
+Type  : Slow Model Setup 'CompteurM_Nbits:inst1|Sgn_out'
+Slack : -0.238
+TNS   : -0.892
+
+Type  : Slow Model Setup 'CompteurM_Nbits:inst6|Sgn_out'
+Slack : -0.220
+TNS   : -0.591
+
+Type  : Slow Model Hold 'CompteurM_Nbits:inst1|Sgn_out'
+Slack : 0.391
+TNS   : 0.000
+
+Type  : Slow Model Hold 'CompteurM_Nbits:inst2|Sgn_out'
+Slack : 0.391
+TNS   : 0.000
+
+Type  : Slow Model Hold 'CompteurM_Nbits:inst4|Sgn_out'
+Slack : 0.391
+TNS   : 0.000
+
+Type  : Slow Model Hold 'CompteurM_Nbits:inst5|Sgn_out'
+Slack : 0.391
+TNS   : 0.000
+
+Type  : Slow Model Hold 'CompteurM_Nbits:inst6|Sgn_out'
+Slack : 0.391
+TNS   : 0.000
+
+Type  : Slow Model Hold 'CompteurM_Nbits:inst7|Sgn_out'
+Slack : 0.391
+TNS   : 0.000
+
+Type  : Slow Model Hold 'CLOCK_50'
+Slack : 0.531
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'CLOCK_50'
+Slack : -1.380
+TNS   : -31.380
+
+Type  : Slow Model Minimum Pulse Width 'CompteurM_Nbits:inst1|Sgn_out'
+Slack : -0.500
+TNS   : -5.000
+
+Type  : Slow Model Minimum Pulse Width 'CompteurM_Nbits:inst2|Sgn_out'
+Slack : -0.500
+TNS   : -5.000
+
+Type  : Slow Model Minimum Pulse Width 'CompteurM_Nbits:inst4|Sgn_out'
+Slack : -0.500
+TNS   : -5.000
+
+Type  : Slow Model Minimum Pulse Width 'CompteurM_Nbits:inst5|Sgn_out'
+Slack : -0.500
+TNS   : -5.000
+
+Type  : Slow Model Minimum Pulse Width 'CompteurM_Nbits:inst6|Sgn_out'
+Slack : -0.500
+TNS   : -5.000
+
+Type  : Slow Model Minimum Pulse Width 'CompteurM_Nbits:inst7|Sgn_out'
+Slack : -0.500
+TNS   : -4.000
+
+Type  : Fast Model Setup 'CLOCK_50'
+Slack : -0.732
+TNS   : -9.572
+
+Type  : Fast Model Setup 'CompteurM_Nbits:inst5|Sgn_out'
+Slack : 0.200
+TNS   : 0.000
+
+Type  : Fast Model Setup 'CompteurM_Nbits:inst2|Sgn_out'
+Slack : 0.328
+TNS   : 0.000
+
+Type  : Fast Model Setup 'CompteurM_Nbits:inst7|Sgn_out'
+Slack : 0.341
+TNS   : 0.000
+
+Type  : Fast Model Setup 'CompteurM_Nbits:inst4|Sgn_out'
+Slack : 0.387
+TNS   : 0.000
+
+Type  : Fast Model Setup 'CompteurM_Nbits:inst1|Sgn_out'
+Slack : 0.416
+TNS   : 0.000
+
+Type  : Fast Model Setup 'CompteurM_Nbits:inst6|Sgn_out'
+Slack : 0.417
+TNS   : 0.000
+
+Type  : Fast Model Hold 'CompteurM_Nbits:inst1|Sgn_out'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Hold 'CompteurM_Nbits:inst2|Sgn_out'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Hold 'CompteurM_Nbits:inst4|Sgn_out'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Hold 'CompteurM_Nbits:inst5|Sgn_out'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Hold 'CompteurM_Nbits:inst6|Sgn_out'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Hold 'CompteurM_Nbits:inst7|Sgn_out'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Hold 'CLOCK_50'
+Slack : 0.243
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'CLOCK_50'
+Slack : -1.380
+TNS   : -31.380
+
+Type  : Fast Model Minimum Pulse Width 'CompteurM_Nbits:inst1|Sgn_out'
+Slack : -0.500
+TNS   : -5.000
+
+Type  : Fast Model Minimum Pulse Width 'CompteurM_Nbits:inst2|Sgn_out'
+Slack : -0.500
+TNS   : -5.000
+
+Type  : Fast Model Minimum Pulse Width 'CompteurM_Nbits:inst4|Sgn_out'
+Slack : -0.500
+TNS   : -5.000
+
+Type  : Fast Model Minimum Pulse Width 'CompteurM_Nbits:inst5|Sgn_out'
+Slack : -0.500
+TNS   : -5.000
+
+Type  : Fast Model Minimum Pulse Width 'CompteurM_Nbits:inst6|Sgn_out'
+Slack : -0.500
+TNS   : -5.000
+
+Type  : Fast Model Minimum Pulse Width 'CompteurM_Nbits:inst7|Sgn_out'
+Slack : -0.500
+TNS   : -4.000
+
+------------------------------------------------------------
