@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\andreloboteixeira\Google Drive\Elétrica\8 - intercâmbio\Conception de Systèmes Numériques\TP4\Processeur\simulation\qsim
+vSCOMP2
+Z1 !s100 YcmifmUPcbmI0AFT^_?][2
+Z2 I:V6C;e>L0:c6QQ?><zkmU2
+Z3 VkQYN6dK6:7X`V?DlhH_A]1
+Z4 dU:\ElecNum\TP4\Processeur\simulation\qsim
+Z5 w1452677660
+Z6 8Processeur.vo
+Z7 FProcesseur.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|Processeur.vo|
+Z10 o-work work -O0
+Z11 n@s@c@o@m@p2
+!i10b 1
+!s85 0
+Z12 !s108 1452677657.190000
+Z13 !s107 Processeur.vo|
+!s101 -O0
+vSCOMP2_vlg_check_tst
+!i10b 1
+Z14 !s100 kj3zZ9c<aT:zZZ7E93_K@1
+Z15 ILb>@CFSeJ>Mki:;0nZJ4c3
+Z16 VNc4=Rn_EZ<cgUYoEJ<olj1
+R4
+Z17 w1452677658
+Z18 8Processeur.vt
+Z19 FProcesseur.vt
+L0 61
+R8
+r1
+!s85 0
+31
+Z20 !s108 1452677657.668000
+Z21 !s107 Processeur.vt|
+Z22 !s90 -work|work|Processeur.vt|
+!s101 -O0
+R10
+Z23 n@s@c@o@m@p2_vlg_check_tst
+vSCOMP2_vlg_sample_tst
+!i10b 1
+Z24 !s100 S=@L]gcX4?Fonf3d[O0J;3
+Z25 Ioj08NIFA:HR]MPO^?W0i41
+Z26 VUB1V:c<fO2D32mMA_lXJz1
+R4
+R17
+R18
+R19
+L0 29
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z27 n@s@c@o@m@p2_vlg_sample_tst
+vSCOMP2_vlg_vec_tst
+!i10b 1
+!s100 2<XCUf<PzF2M1nL2:hRQL0
+IXl2:gM<USEeP:9:]=b6z83
+Z28 VR^QIFNE=k>Nh7KHFcz5oo1
+R4
+R17
+R18
+R19
+Z29 L0 1686
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z30 n@s@c@o@m@p2_vlg_vec_tst
