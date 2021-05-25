@@ -1,0 +1,102 @@
+
+André,
+
+durante a execução da função qsort, ela precisa comparar valores do
+arranjo. Para ser uma função gerar, e ordenar arranjo de qualquer
+tipo, o artifício que usaram foi esse: quando precisar comparar dois
+elementos, ela chama uma outra função para fazer a comparação, e passa
+pra ela os endereços dos dois valores que devem ser comparados.
+
+Então, os ponteiros que a função recebe são ponteiros para posições do
+arranjo (isso responde uma das suas perguntas).
+
+Entretanto, se o arranjo fosse de int, esses ponteiros seriam int *.
+Se fosse arranjo de float, seriam float *. E por aí vai. A função
+qsort precisaria "saber" isso para realizar a chamada apropriadamente.
+Então, ela foi feita passando ponteiro para void, que em C é um
+ponteiro genérico, que aponta para qualquer coisa. Por isso a função
+compara recebe ponteiros do tipo void *.
+
+Tendo recebido ponteiros para itens do arranjo, a função compara não
+deve mudar os valores desses ponteiros. Apenas usar seu valor. Quando
+existe um const na declaração de parâmetros, a função não pode mudar o
+valor. Então, a chamada feita pela função qsort é para uma função que
+recebe dois ponteiros, que devem ser declarados como const void* (isso
+responde outra pergunta)
+
+Sobre o *((int*)a): função recebe ponteiros para tipos genéricos, e
+precisa comparar os valores apontados. Para comparar os valores, ela
+precisa enxergá-los da forma apropriada. Um int tem tantos bytes, um
+double outro tamanho, um tipo criado pelo usuário pode ter vários
+campos, etc. Usando a variável 'a' temos um endereço para o valor
+apontado. Usando (int *)a temos um endereço de int para o valor
+apontado. Assim podemos tratar o valor apontado como int. Isso é
+semelhante ao trecho abaixo:
+
+float x = 3.5;
+cout << x;
+cout << (int) x;
+
+no primeiro cout será escrito 3.5, que é o valor de x. No segundo,
+será escrito o valor de x como se fosse int, então será impresso 3. Um
+tipo entre parênteses trata o valor seguinte como daquele tipo. Isso
+não muda o valor, o x continua sendo 3.5. Mas o cout enxergará 3.
+Então, se fizermos:
+
+int *x;
+x = (int *)a;
+
+x recebe o valor de a, ou seja, aponta pro mesmo lugar de a.
+Entretanto, x é apontador de int, e poderíamos usar *x para obter o
+valor armazenado no endereço apontado. A comparação final poderia ser
+*x - *y. Mas não poderia ser *a-*b, pois o - é um operador pra int,
+float, etc, não pra void (que é o tipo apontado pelo a).
+
+Então, a função poderia ser:
+
+int compara(const void *a , const void *b)
+{
+    int *x = (int *) a;
+    int *y = (int *) b;
+
+    return *x - *y;
+}
+
+Ok?
+
+Se precisasse fazer mais coisa para comparar x e y, teria que ficar
+usando *x e *y em todo lugar, pois do jeito que fiz acima, x e y são
+ponteiros de in, não int propriamente. Para não ter que ficar
+escrevendo *x e *y toda hora, criei x e y com int de uma vez. O * na
+frente do (int*)a pega o valor apontado. Veja um passo a passo do que
+acontece naquele trambolho de expressão...
+
+int x;
+int *px;
+
+px = (int*)a;
+x = *px;
+
+No primeiro comando, px aponta para o mesmo local que a aponta, ou
+seja, para um item do arranjo.
+No segundo comando, x recebe o valor apontado por px, ou seja, o valor
+do item correspondente no arranjo.
+
+Em vez de criar duas variáveis, fiz toda a conversão de ponteiros e
+endereços numa expressão só (e isso responde outra pergunta):
+
+x = *(   (int*)a   );
+
+Por fim, o que é passado para a função qsort é o "nome" da função que
+faz a comparação. A função não é chamada ali, seu nome é passado para
+a qsort. É a função qsort que cuida de chamá-la, aí sim passando os
+parâmetros. Quando a função qsort precisa comparar dois itens, ela
+chama a função compara (cujo nome foi passado pra qsort), e passa o
+endereço dos itens que quer comparar. Se a função retornar negativo, o
+primeiro item é menor, se retornar 0 eles são iguais e se retornar
+maior, o primeiro item é maior.
+
+Qualquer outra dúvida, não deixe de me escrever! Quando vocês
+retornarem pra Viçosa para o próximo semestre, tentaremos fazer um
+intensivão pra maratona mineira. Ela já será no sábado, dia 25, então
+teremos apenas 2 semanas. Quanto mais puderem treinar antes, melhor!

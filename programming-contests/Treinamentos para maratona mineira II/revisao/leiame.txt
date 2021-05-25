@@ -1,0 +1,13 @@
+Aula de revisão do dia 12/04:
+- notafreq.cpp
+- tomate.cpp
+- palavras.cpp
+- ordenavetor.cpp
+
+Arquivos feitos na aula do dia 05/04:
+- funcoes-parte4b.cpp
+- funcoes-parte4b.cpp
+(sao parecidos com os disponiveis no PVANet, porem com mais comentarios)
+
+Pasta "Outros"
+- IMPORTANTE: funcoes-parte2 tem uma serie de exercicios para treinar o conceito de parametros, variaveis locais e globais
