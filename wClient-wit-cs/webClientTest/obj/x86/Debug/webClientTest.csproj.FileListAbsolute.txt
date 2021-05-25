@@ -1,0 +1,7 @@
+C:\Users\Andre\AppData\Local\Temporary Projects\webClientTest\bin\Debug\webClientTest.exe
+C:\Users\Andre\AppData\Local\Temporary Projects\webClientTest\bin\Debug\webClientTest.pdb
+C:\Users\Andre\AppData\Local\Temporary Projects\webClientTest\obj\x86\Debug\webClientTest.Form1.resources
+C:\Users\Andre\AppData\Local\Temporary Projects\webClientTest\obj\x86\Debug\webClientTest.Properties.Resources.resources
+C:\Users\Andre\AppData\Local\Temporary Projects\webClientTest\obj\x86\Debug\webClientTest.csproj.GenerateResource.Cache
+C:\Users\Andre\AppData\Local\Temporary Projects\webClientTest\obj\x86\Debug\webClientTest.exe
+C:\Users\Andre\AppData\Local\Temporary Projects\webClientTest\obj\x86\Debug\webClientTest.pdb
